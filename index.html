@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator-JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="password_container">
+            <input type="text" placeholder="p4$5w0rD!" readonly>
+            <div class="copy"><i class="far fa-clipboard"></i></div>
+        </div>
+        <form class="password_form">
+            <div class="char_container">
+                <span class="char_word">Character Length</span>
+                <span class="char_length">0</span>
+            </div>
+            <div class="range_container"><input class="range" type="range" value="0" min="0" max="20"></div>
+            <div class="check_div"><input type="checkbox" id="Uppercase"> <label for="Uppercase">Include Uppercase Letters</label></div>
+            <div class="check_div"><input type="checkbox" id="Lowercase"> <label for="Lowercase">Include Lowercase Letters</label></div>
+            <div class="check_div"><input type="checkbox" id="Numbers"> <label for="Numbers">Include Numbers</label></div>
+            <div class="check_div"><input type="checkbox" id="Symbols"> <label for="Symbols">Include Symbols</label></div>
+            <button class="generate_btn">Generator Password</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
