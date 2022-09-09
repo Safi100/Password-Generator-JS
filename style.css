@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --bg:#18171F;
+    --container__bg:#24232C;
+    --primary:#F61067;
+    --White:#fff;
+    --font:'JetBrains Mono', monospace;
+
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--bg);
+    min-height: 100vh;
+    gap: 20px;
+}
+input {
+    font-family: var(--font);
+}
+.container{
+    width: 90%;
+    max-width: 345px;
+    background: var(--container__bg);
+    padding: 20px 25px;
+    color: var(--White);
+}
+.password_container{
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0,0,0.3);
+    margin-bottom: 15px;
+}
+.password_container input{
+    flex: 5;
+    background: transparent;
+    outline: 0;
+    cursor: unset;
+    border: 0;
+    padding: 7px 18px;
+    width: 100%;
+    font-size: 20px;
+}
+.password_container .copy{
+    flex: 1;
+}
+.password_form{
+    display: flex;
+    flex-direction: column;
+}
+.char_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.char_length{
+    color: var(--primary);
+    font-size: 25px;
+}
+.range_container{
+    margin-bottom: 15px;
+}
+.range_container input{
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    background: #18171F;
+    height: 8px;
+    position: relative;
+}
+.check_div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.check_div input{
+    /* -webkit-appearance: none; */
+    width: 15px;
+    height: 15px;
+    background: var(--primary);
+}
+
+.generate_btn{
+    font-weight: 700;
+    background: var(--primary);
+    border: 0;
+    color: var(--White);
+    padding: 10px 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#password{
+    color: var(--White);
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.copy:hover i{
+    color: var(--primary);
+}
+.name{
+    color: var(--White);
+    width: 100%;
+    text-align: center;
+}
+.name .heart{
+    color: red;
+    font-size: 25px;
+}
+.name a{
+    color: red;
+    text-decoration: none;
+}
