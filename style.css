@@ -125,3 +125,6 @@ input {
     color: red;
     text-decoration: none;
 }
+.heading{
+    color: var(--White);
+}
